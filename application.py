@@ -5,7 +5,7 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 
-app = Flask("application")
+app = Flask("diagnosis_breast_cancer")
 
 # Load the trained model
 model_file = "best_model.pkl"

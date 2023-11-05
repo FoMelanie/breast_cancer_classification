@@ -18,7 +18,8 @@ patient_values = {
     "fractal_dimension_worst": 0.11976911976911982,
 }
 
-url = "http://localhost:9696/predict"  ## this is the route we made for prediction
+host = "tumor-prediction-env.eba-2pf9zgkt.eu-west-1.elasticbeanstalk.com"
+url = f"http://{host}/predict"  ## this is the route we made for prediction
 response = requests.post(
     url, json=patient_values
 )  ## post the customer information in json format

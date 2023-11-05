@@ -16,6 +16,9 @@ patsy = "*"
 statsmodels = "*"
 scikit-learn = "*"
 xgboost = "*"
-black = {extras = ["jupyter"], version = "*"}
+gunicorn = "*"
+waitress = "*"
 
 [dev-packages]
+black = {extras = ["jupyter"], version = "*"}
+awsebcli = "*"

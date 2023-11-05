@@ -16,5 +16,6 @@ patsy = "*"
 statsmodels = "*"
 scikit-learn = "*"
 xgboost = "*"
+black = {extras = ["jupyter"], version = "*"}
 
 [dev-packages]

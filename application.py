@@ -13,6 +13,9 @@ model_file = "best_model.pkl"
 with open(model_file, "rb") as model:
     model = pickle.load(model)
 
+@app.route('/', methods=["GET"])
+def home():
+    return "Welcome to breast tumor diagnosis prediction!"
 
 @app.route("/predict", methods=["POST"])
 def predict():

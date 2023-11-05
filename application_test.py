@@ -18,8 +18,13 @@ patient_values = {
     "fractal_dimension_worst": 0.11976911976911982,
 }
 
-host = "tumor-prediction-env.eba-2pf9zgkt.eu-west-1.elasticbeanstalk.com"
+# Available application URL (the containerized application is deployed here)
+host = "tumor-prediction-env.eba-byntr9ky.eu-west-1.elasticbeanstalk.com"
 url = f"http://{host}/predict"  ## this is the route we made for prediction
+
+# This is the local url: uncomment it and comment the url above if you want to test the application locally
+# url_local = "http://localhost:9696/predict"
+
 response = requests.post(
     url, json=patient_values
 )  ## post the customer information in json format

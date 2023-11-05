@@ -7,7 +7,7 @@ October is the breast cancer awareness month.
 Breast cancer is a major public health issue. It was responsible for 685000 deaths around the globe in 2020 (WHO: https://www.who.int/fr/news-room/fact-sheets/detail/breast-cancer). Half of the breast cancer cases in women appear without any risk factor other than sex and age. About 0.5-1% of breast cancers appear in men.
 It is thus interesting to find new ways to detect breast cancer, especially at early stages when the disease can be treated with efficacity. We can consider tumor characteristics obtained through X-ray.
 
-<img src="https://github.com/FoMelanie/breast_cancer_classification/assets/87911606/3606d5e2-3474-4745-aed8-0ee2dbd1769f" style="display:block;float:none;margin-left:auto;margin-right:auto;width:40%">
+<img src="https://github.com/FoMelanie/breast_cancer_classification/blob/7408217bb4454d3b93f4d2f686cadfed85530911/data/images/breas_cancer_awareness_month.png" style="display:block;float:none;margin-left:auto;margin-right:auto;width:100%">
 
 
 Starting from the Breast Cancer Dataset on Kaggle (https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset), the goal is to classify samples as:
@@ -69,9 +69,9 @@ The script already contains the patient values needed to get a prediction.
 
 Here are some screens of the application predictions using AWS ElasticBean:
 
-<img src="https://github.com/FoMelanie/breast_cancer_classification/blob/a645b0384b9d6946018834e121fb173989fe41ea/data/images/application_deployed.png" style="display:block;float:none;margin-left:auto;margin-right:auto;width:40%">
+<img src="https://github.com/FoMelanie/breast_cancer_classification/blob/a645b0384b9d6946018834e121fb173989fe41ea/data/images/application_deployed.png" style="display:block;float:none;margin-left:auto;margin-right:auto;width:100%">
 
-<img src="https://github.com/FoMelanie/breast_cancer_classification/blob/a645b0384b9d6946018834e121fb173989fe41ea/data/images/application_prediction.png" style="display:block;float:none;margin-left:auto;margin-right:auto;width:40%">
+<img src="https://github.com/FoMelanie/breast_cancer_classification/blob/a645b0384b9d6946018834e121fb173989fe41ea/data/images/application_prediction.png" style="display:block;float:none;margin-left:auto;margin-right:auto;width:100%">
 
 ### Locally without Docker
 

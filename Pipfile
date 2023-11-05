@@ -21,3 +21,4 @@ waitress = "*"
 
 [dev-packages]
 black = {extras = ["jupyter"], version = "*"}
+awsebcli = "*"

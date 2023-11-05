@@ -1,14 +1,5 @@
-import pickle
-import numpy as np
-from sklearn.linear_model import LogisticRegression
+import requests  ## to use the POST method we use a library named requests
 
-# Load the model
-model_file = "best_model.pkl"
-
-with open(model_file, "rb") as model:
-    model = pickle.load(model)
-
-# Patient values to test
 patient_values = {
     "texture_mean": 0.25160635779506246,
     "smoothness_mean": 0.2997201408323554,
@@ -27,16 +18,9 @@ patient_values = {
     "fractal_dimension_worst": 0.11976911976911982,
 }
 
-# Transform data to 2D array
-patient_values = patient_values.values()
-data = list(patient_values)
-patient_array = np.array(data, dtype=np.float64).reshape((1, -1))
-
-print("Tumor classification for the patient:")
-print(model.predict(patient_array))
-
-if model.predict(patient_array) == 0:
-    print("The tumor is classified as benign for this patient.")
-
-else:
-    print("The tumor is classified as malignant for this patient.")
+url = "http://localhost:9696/predict"  ## this is the route we made for prediction
+response = requests.post(
+    url, json=patient_values
+)  ## post the customer information in json format
+result = response.json()  ## get the server response
+print(result)

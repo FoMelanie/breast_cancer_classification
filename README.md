@@ -73,6 +73,28 @@ Here are some screens of the application predictions using AWS ElasticBean:
 
 <img src="https://github.com/FoMelanie/breast_cancer_classification/blob/a645b0384b9d6946018834e121fb173989fe41ea/data/images/application_prediction.png" style="display:block;float:none;margin-left:auto;margin-right:auto;width:100%">
 
+### How to deploy to cloud
+
+In order to deploy the containerized application to the cloud by yourself, you must follow these steps:
+
+1 - Create a AWS account
+
+2 - Configure a user account with the right permissions (root user IAM setup) to create a AWS EB environment
+
+3 - Run the following command to init the EB environment:
+
+```eb init -p "Docker running on 64bit Amazon Linux 2" tumor-diagnosis-serving -r eu-west-1```
+
+ You will have to change the location based on your own location.
+
+ 4 - Finally, create the environment application by running this command:
+
+ ```eb create tumor-prediction-env```
+
+ 5 - When the application is running, you can test it directly by running:
+
+ ```pipenv run python .\application_test.py```
+
 ### Locally without Docker
 
 
